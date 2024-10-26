@@ -1,0 +1,2 @@
+ans ==> Flexbox is designed for one-dimensional layouts, either a row or a column. It's best for aligning items along a single axis, making it ideal for navbars, footers, and small-scale layouts. With Flexbox, you can easily align items to the left, right, center, or spaced evenly.
+        Grid, on the other hand, is made for two-dimensional layouts—both rows and columns. It's perfect for more complex designs, like entire web pages or card-based layouts. Grid allows for precise control over the placement and sizing of items, making it flexible for a variety of layouts.
