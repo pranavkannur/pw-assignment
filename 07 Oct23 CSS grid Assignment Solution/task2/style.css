@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "A B"
+    "C D";
+  grid-gap: 10px;
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.item {
+  background-color: peachpuff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.itemA {
+  grid-area: A;
+}
+.itemB {
+  grid-area: B;
+}
+.itemC {
+  grid-area: C;
+}
+.itemD {
+  grid-area: D;
+}

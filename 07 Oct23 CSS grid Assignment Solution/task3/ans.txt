@@ -1,0 +1,59 @@
+grid-auto-rows and grid-auto-columns are used to define the size of rows and columns that are added automatically in a grid layout when items are placed outside the defined grid.
+
+grid-auto-rows: Specifies the size of rows that are automatically created. grid-auto-columns: Specifies the size of columns that are automatically created.
+
+Let's look at an example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Auto Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+    </div>
+</body>
+</html>
+
+CSS
+
+.container {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 100px;
+    grid-auto-rows: 50px;
+    grid-auto-columns: 50px;
+}
+
+.item1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.item2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.item3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.item4 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+In this example:
+
+1)grid-template-rows: 100px; and grid-template-columns: 100px; define a single row and a single column of 100px each.
+2)grid-auto-rows: 50px; and grid-auto-columns: 50px; define that any additional rows and columns that are automatically created will be 50px each.
+So, when the grid encounters item3 and item4, which are placed outside the initially defined grid, it will automatically create new rows and columns of 50px each to accommodate them.

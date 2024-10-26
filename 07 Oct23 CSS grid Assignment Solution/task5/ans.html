@@ -1,0 +1,96 @@
+<!-- In CSS, justify-items and justify-self are both properties used in the context of CSS Grid and Flexbox layouts, but they serve different purposes.
+
+justify-items
+    This property is used on a container (like a grid or flex container) to define how the items inside that container are aligned along the inline (horizontal) axis. It affects all child items within the container. 
+    Example: -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            justify-items: center;
+            /* Aligns all items in the center */
+            gap: 10px;
+        }
+
+        .item {
+            background-color: lightblue;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Example 1</h1>
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- justify-self
+This property is used on individual items within a grid or flex container to define how that specific item is aligned along the inline (horizontal) axis. It overrides the justify-items property for that particular item.
+
+Example: -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            justify-items: center;
+            /* Default alignment for all items */
+            gap: 10px;
+        }
+
+        .item {
+            background-color: lightblue;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .special {
+            justify-self: end;
+            /* Overrides to align this specific item to the end */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exmaple 2</h1>
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item special">2</div>
+        <div class="item">3</div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Summary
+justify-items: Affects all items within a container, defining their default alignment along the horizontal axis.
+justify-self: Affects only the specific item it is applied to, allowing for individual alignment overrides.
+This distinction allows for flexible and precise control over layout in CSS Grid and Flexbox. -->
