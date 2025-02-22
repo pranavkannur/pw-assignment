@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .box {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .box__1 {
+        background-color: red;
+        z-index: 1;
+      }
+
+      .box__2 {
+        background-color: blue;
+        z-index: 2;
+      }
+
+      .box__3 {
+        background-color: green;
+        z-index: 3;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box__1" aria-label="Box with z-index 1">z-index 1</div>
+      <div class="box box__2" aria-label="Box with z-index 2">z-index 2</div>
+      <div class="box box__3" aria-label="Box with z-index 3">z-index 3</div>
+    </div>
+  </body>
+</html>
