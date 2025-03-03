@@ -40,7 +40,7 @@ if (step1Data) {
 In this example, the user's input in a multi-step form is saved in sessionStorage to ensure that it is preserved while the user navigates between steps.
 
 ## Differences:
-- **Persistence:** localStorage persists data until it is explicitly deleted by the developer, whereas sessionStorage clears data when the session ends (i.e., when the browser tab or window is closed).
+- **Persistence:** localStorage persists data until it is explicitly deleted by the developer, whereas sessionStorage clears data when the session ends.
 
 - **Scope:** localStorage is scoped to the origin (domain), making the data accessible to all pages under the same origin. In contrast, sessionStorage is scoped to the browser tab or window, ensuring that data is only accessible within the same session.
 
