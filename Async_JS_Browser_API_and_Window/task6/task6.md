@@ -22,7 +22,7 @@ if (theme) {
 In this example, the user's selected theme (dark mode) is saved in localStorage and applied whenever the user revisits the website.
 
 ## SessionStorage:
-sessionStorage stores data for the duration of the page session. The data is available only while the browser tab or window is open. Once the tab or window is closed, the data is cleared. It is suitable for storing temporary data that does not need to persist beyond the current session.
+SessionStorage stores data for the duration of the page session. The data is available only while the browser tab or window is open. Once the tab or window is closed, the data is cleared. It is suitable for storing temporary data that does not need to persist beyond the current session.
 
 ## Example: Preserving Form Data During a Multi-step Form:
 ```javascript
